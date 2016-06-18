@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="stylesheets/pygment_trac.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <title>Luis Rita website</title>
+  </head>
+
+  <body>
+    <ul class="navbar">
+      <li><a href="index.html">Exercicios</a></li>
+      <li><a href="paralax.html">Paralax</a></li>
+    </ul>
+
+    <div class="container tabs-container">
+
+      <ul id="tabs" class="tabs">
+        <li data-tab="breadcrumbs"><a href="#">breadcrumbs</a></li>
+        <li data-tab="clock"><a href="#">clock</a></li>
+        <li data-tab="calc"><a href="#">calculator</a></li>
+        <li data-tab="animations"><a href="#">animations</a></li>
+        <li data-tab="list"><a href="#">list</a></li>
+        <li data-tab="json"><a href="#">json</a></li>
+        <li data-tab="blends"><a href="#">blend mode</a></li>
+        <li data-tab="counter"><a href="#">counter</a></li>
+      </ul>
+
+      <div id="tabsContent" class="tabs-content">
+        <section class="breadcrumb tab__item" data-tab="breadcrumbs">
+          <a href="paralax.html" class="active">paralax</a>
+          <a href="#">menu</a>
+          <a href="#">menu</a>
+          <a href="#">menu</a>
+        </section>
+
+        <section class="clock tab__item" data-tab="clock">
+          <input id="start" name="controls" type="radio">
+          <input id="stop" name="controls" type="radio">
+          <input id="reset" name="controls" type="radio">
+          <div class="timer">
+            <div class="cell">
+              <div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+              <div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+              <div class="divider">:</div>
+            </div>
+            <div class="cell">
+              <div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+              <div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+              <div class="divider">:</div>
+            </div>
+            <div class="cell">
+              <div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+              <div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+              <div class="divider">:</div>
+            </div>
+            <div class="cell">
+              <div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+              <div class="numbers tenmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+              <div class="numbers hundredmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+          </div>
+          <div class="time_controls">
+            <label for="start">Start</label>
+            <label for="stop">Stop</label>
+            <label for="reset">Reset</label>
+          </div>
+        </section>
+
+        <section class="calculator tab__item" data-tab="calc">
+          <div class="calculator-wrapper">
+            <!-- Screen and clear key -->
+            <div class="top">
+              <span class="clear">C</span>
+              <div class="screen"></div>
+            </div>
+            
+            <div class="keys">
+              <!-- operators and other keys -->
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span class="operator">+</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span class="operator">-</span>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span class="operator">÷</span>
+              <span>0</span>
+              <span>.</span>
+              <span class="eval">=</span>
+              <span class="operator">x</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="animations tab__item" data-tab="animations">
+          <div class="square rotate"></div>
+
+          <div class="slider-frame">
+            <ul class="pic-container slide">
+              <li class="pic-one"></li>
+              <li class="pic-two"></li>
+              <li class="pic-three"></li>
+              <li class="pic-four"></li>
+            </ul>
+          </div>
+
+          <div class="star-anim"></div>
+        </section>
+
+        <section class="list-hack tab__item" data-tab="list">
+          <ul class="nth">
+            <li>1</li>
+          </ul>
+          <ul class="nth">
+            <li>1</li>
+            <li>2</li>
+          </ul>
+          <ul class="nth">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <ul class="nth">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+          <ul class="nth">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </section>
+
+        <section class="json tab__item" data-tab="json">
+          <a href="#" id="clickme">click me to get JSON</a>
+          <div class="json-content"></div>
+        </section>
+
+        <section class="blends tab__item" data-tab="blends">
+          <img class="img-one" src="images/bg_1.jpg">
+          <img class="img-two" src="images/bg_2.jpg">
+        </section>
+
+        <section class="counter tab__item" data-tab="counter">
+          <h1>Pagination CSS Counter</h1>
+          <h2>Jump to page:</h2>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </section>
+      </div>
+
+      <script src="javascripts/main.js" type="text/javascript"></script>
+    </div>
+  </body>
+</html>

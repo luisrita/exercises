@@ -1,0 +1,67 @@
+
+/** PARALAX PAGE **/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#home {
+	position: relative;
+  background: url(../images/bg_1.jpg) 50% 0 fixed;
+  min-height: 600px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+	#home article {
+		position: absolute;
+		top: 100px;
+		text-transform: capitalize;
+		height: 458px;
+		width: 300px;
+		text-align: center;
+		float: left;
+		margin-left: 200px;
+	}
+
+#about {
+	position: relative;
+  background: url(../images/bg_2.jpg) 50% 0 fixed;
+  min-height: 600px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+}
+
+	#about article {
+		position: absolute;
+		top: 100px;
+		text-transform: capitalize;
+		height: 458px;
+		width: 300px;
+		text-align: center;
+		float: right;
+		margin-right: 200px;
+	}
+
+#info {	
+	position: relative;
+  background: url(../images/bg_3.jpg) 50% 0 fixed;
+  min-height: 600px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+	#info article {
+		position: absolute;
+		top: 100px;
+		text-transform: capitalize;
+		height: 458px;
+		width: 200px;
+		text-align: center;
+		float: left;
+		margin-left: 200px;
+	}
